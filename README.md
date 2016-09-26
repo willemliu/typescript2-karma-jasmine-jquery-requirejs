@@ -7,7 +7,7 @@ The project code itself tries to mimic a simplistic real-life example. It does t
 Clone this project and follow these steps to get it up and running on your own computer.
 
 1. Install [NodeJS](https://nodejs.org/en/) and NPM for your system
-1. Install [TypeScript](https://www.typescriptlang.org/) and NPM for your system
+1. Install [TypeScript](https://www.typescriptlang.org/) globally: `npm install -g typescript`
 1. Install Node project dependecies: `npm install`
 1. Install [Gulp](http://gulpjs.com/) globally: `npm install -g gulp`
 1. Install [Typings](https://github.com/typings/typings) globally: `npm install -g typings`. [Typings](https://github.com/typings/typings) is a TypeScript Definition Manager
