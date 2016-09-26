@@ -1,6 +1,10 @@
 language: node_js
 node_js:
   - "node"
+addons:
+  apt:
+    packages:
+      - nodejs-legacy
 install:
   - npm install -g gulp
   - npm install -g typescript
