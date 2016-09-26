@@ -4,7 +4,6 @@
   "description": "TypeScript 2, Gulp, Karma, Jasmine, AMD, RequireJS, jQuery test",
   "main": "index.js",
   "scripts": {
-    "prepublish": "tsc",
     "test": "gulp test"
   },
   "author": "Willem Liu",
