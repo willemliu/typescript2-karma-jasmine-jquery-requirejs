@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/willemliu/typescript2-karma-jasmine-jquery-requirejs.svg?branch=master)](https://travis-ci.org/willemliu/typescript2-karma-jasmine-jquery-requirejs)
-[![Coverage Status](https://coveralls.io/repos/github/willemliu/typescript2-karma-jasmine-jquery-requirejs/badge.svg)](https://coveralls.io/github/willemliu/typescript2-karma-jasmine-jquery-requirejs)
+[![Coverage Status](https://coveralls.io/repos/github/willemliu/typescript2-karma-jasmine-jquery-requirejs/badge.svg?branch=master)](https://coveralls.io/github/willemliu/typescript2-karma-jasmine-jquery-requirejs?branch=master)
 
 # typescript2-karma-jasmine-jquery-requirejs
 Showcase TypeScript 2 unit test with Karma, Jasmine, jQuery and RequireJS.
