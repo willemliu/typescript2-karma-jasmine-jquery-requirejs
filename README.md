@@ -2,7 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/willemliu/typescript2-karma-jasmine-jquery-requirejs/badge.svg?branch=master)](https://coveralls.io/github/willemliu/typescript2-karma-jasmine-jquery-requirejs?branch=master)
 
 # typescript2-karma-jasmine-jquery-requirejs
-Showcase TypeScript 2 unit test with Karma, Jasmine, jQuery and RequireJS.
+Showcase unit testing of TypeScript 2 project with jQuery and RequireJS through Karma and Jasmine.
 This project is an example on how to setup Unit Testing in a TypeScript 2 project using Karma as test runner and Jasmine as test framework.
 The project code itself tries to mimic a simplistic real-life example. It does that by using RequireJS as module loader and including jQuery as JavaScript library.
 
