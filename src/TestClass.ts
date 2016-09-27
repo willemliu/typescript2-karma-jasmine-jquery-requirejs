@@ -10,7 +10,7 @@ export default class TestClass {
 
   initListeners() {
     let that = this;
-    $('button').click(function() {
+    $(document).on('click', 'button', function() {
       $('#result').text(that.add(parseInt($('#inputOne').val()), parseInt($('#inputTwo').val())));
     });
   }

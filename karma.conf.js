@@ -30,7 +30,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      '**/*.ts': ['typescript']
+      'src/**/*.ts': ['typescript', 'coverage'],
+      'test/**/*.ts': ['typescript']
     },
     
     typescriptPreprocessor: {
@@ -54,8 +55,26 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
-
+    reporters: ['coverage', 'progress'],
+    
+    coverageReporter: {
+      // specify a common output directory
+      dir: 'build/reports/coverage',
+      reporters: [
+        // reporters not supporting the `file` property
+        { type: 'html', subdir: 'report-html' },
+        { type: 'lcov', subdir: 'report-lcov' },
+        // reporters supporting the `file` property, use `subdir` to directly
+        // output them in the `dir` directory
+        { type: 'cobertura', subdir: '.', file: 'cobertura.txt' },
+        { type: 'lcovonly', subdir: '.', file: 'report-lcovonly.txt' },
+        { type: 'teamcity', subdir: '.', file: 'teamcity.txt' },
+        { type: 'text', subdir: '.', file: 'text.txt' },
+        { type: 'text-summary', subdir: '.', file: 'text-summary.txt' },
+        // Console output
+        { type: 'text', subdir: '.' }
+      ]
+    },
 
     // web server port
     port: 9876,
@@ -89,6 +108,7 @@ module.exports = function(config) {
     
     plugins: [
       'karma-jasmine',
+      'karma-coverage',
       'karma-phantomjs-launcher',
       'karma-requirejs',
       'karma-typescript-preprocessor2'

@@ -1,17 +1,27 @@
 /// <reference path="../../typings/index.d.ts" />
+import * as $ from 'jquery';
 import TestClass from '../src/TestClass';
 
 
 describe('TestClass', () => {
     
     var subject : TestClass = new TestClass();
+    
+    var html = ''.concat(
+      '<input id="inputOne" type="number" value="15"> + ',
+      '<input id="inputTwo" type="number" value="17">',
+      '<button type="buttom">Add</button>',
+      '<label id="result"></label>'
+    );
 
     beforeEach(function () {
-      console.log('Next test');
+      console.log('==> TestClassSpec.ts start');
+      document.body.innerHTML = html;
     });
 
     afterEach(function () {
-      console.log('Test done');
+      document.body.innerHTML = '';
+      console.log('<== TestClassSpec.ts done');
     });
 
     
@@ -26,6 +36,11 @@ describe('TestClass', () => {
       it('should add 2 + 5 together', () => {
         var result : number = subject.add(2, 5);
         expect(result).toBe(7);
+      });
+      
+      it('should add values of input fields together', () => {
+        $('button').click();
+        expect($('#result').text()).toBe('32');
       });
     });
 });
