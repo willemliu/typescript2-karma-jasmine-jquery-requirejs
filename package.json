@@ -9,9 +9,6 @@
   "author": "Willem Liu",
   "license": "ISC",
   "devDependencies": {
-    "@types/jasmine": "^2.5.35",
-    "@types/jquery": "^2.0.33",
-    "@types/requirejs": "^2.1.28",
     "coveralls": "^2.11.14",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
@@ -29,8 +26,5 @@
     "phantomjs-prebuilt": "^2.1.12",
     "requirejs": "^2.3.2",
     "typescript": "^2.0.3"
-  },
-  "dependencies": {
-    "@types/jquery": "^2.0.33"
   }
 }

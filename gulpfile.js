@@ -5,7 +5,12 @@ var del = require('del');
 var rjs = require('requirejs');
 var Server = require('karma').Server;
 
-var tsProject = ts.createProject('tsconfig.json');
+var tsProject = ts.createProject('tsconfig.json', { 
+  target: 'es5',
+  module: 'amd',
+  outDir: 'dist/',
+  noImplicitAny: true 
+});
 
 /**
  * Run test once and exit

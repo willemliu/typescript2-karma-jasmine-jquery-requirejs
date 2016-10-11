@@ -1,3 +1,4 @@
+/// <reference path="../typings/index.d.ts" />
 import * as $ from 'jquery';
 
 export default class TestClass {
