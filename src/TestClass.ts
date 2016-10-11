@@ -1,4 +1,3 @@
-/// <reference path="../index.d.ts" />
 import * as $ from 'jquery';
 
 export default class TestClass {
