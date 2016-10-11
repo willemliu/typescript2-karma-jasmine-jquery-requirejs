@@ -13,8 +13,6 @@ Clone this project and follow these steps to get it up and running on your own c
 1. Install [TypeScript](https://www.typescriptlang.org/) globally: `npm install -g typescript`
 1. Install Node project dependecies: `npm install`
 1. Install [Gulp](http://gulpjs.com/) globally: `npm install -g gulp`
-1. Install [Typings](https://github.com/typings/typings) globally: `npm install -g typings`. [Typings](https://github.com/typings/typings) is a TypeScript Definition Manager
-1. Install [Typings](https://github.com/typings/typings) definitions for the project `typings install`
 
 ## Run tests
 You can use either `gulp test` or it's alias `npm test` to run the karma test runner.
