@@ -9,6 +9,9 @@
   "author": "Willem Liu",
   "license": "ISC",
   "devDependencies": {
+    "@types/jasmine": "^2.5.35",
+    "@types/jquery": "^2.0.33",
+    "@types/requirejs": "^2.1.28",
     "coveralls": "^2.11.14",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
@@ -21,7 +24,7 @@
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.2",
     "karma-requirejs": "^1.1.0",
-    "karma-typescript-preprocessor2": "^1.2.1",
+    "karma-typescript-preprocessor": "^0.3.0",
     "phantomjs-prebuilt": "^2.1.12",
     "requirejs": "^2.3.2",
     "typescript": "^2.0.3"

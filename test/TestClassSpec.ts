@@ -1,4 +1,4 @@
-/// <reference path="../../typings/index.d.ts" />
+/// <reference path="../index.d.ts" />
 import * as $ from 'jquery';
 import TestClass from '../src/TestClass';
 

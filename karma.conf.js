@@ -5,7 +5,7 @@ module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
+    basePath: '.',
 
 
     // frameworks to use
@@ -35,12 +35,11 @@ module.exports = function(config) {
     },
     
     typescriptPreprocessor: {
-      tsconfigPath: './tsconfig.json', // Required
       // options passed to the typescript compiler
-      compilerOptions: {
+      options: {
         sourceMap: true, // (optional) Generates corresponding .map file.
         outDir: 'build/',
-        target: 'es5', // (optional) Specify ECMAScript target version: 'ES3' (default), or 'ES5'
+        target: 'ES3', // (optional) Specify ECMAScript target version: 'ES3' (default), or 'ES5'
         module: 'amd', // (optional) Specify module code generation: 'commonjs' or 'amd'
         noImplicitAny: true, // (optional) Warn on expressions and declarations with an implied 'any' type.
         noResolve: true, // (optional) Skip resolution and preprocessing.
@@ -111,7 +110,7 @@ module.exports = function(config) {
       'karma-coverage',
       'karma-phantomjs-launcher',
       'karma-requirejs',
-      'karma-typescript-preprocessor2'
+      'karma-typescript-preprocessor'
     ]
   })
 }

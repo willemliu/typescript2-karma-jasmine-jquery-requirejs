@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "requirejs": "registry:npm/requirejs#2.2.0+20160319062357"
-  },
-  "globalDependencies": {
-    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
-    "jquery": "registry:dt/jquery#1.10.0+20160908203239"
-  }
-}

@@ -22,3 +22,9 @@ require.config({
   // we have to kickoff jasmine, as it is asynchronous
   callback: window.__karma__.start
 })
+
+/*
+// Print all files served in Karma for debug purposes
+for (var file in window.__karma__.files) {
+  console.log(file)
+}*/

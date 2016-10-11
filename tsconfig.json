@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es3",
     "module": "amd",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
     "outDir": "dist/js",
-    "sourceMap": true
+    "sourceMap": true,
+    "diagnostics": true,
+    "listFiles": true
   },
   "include": [
     "src/**/*.ts"
