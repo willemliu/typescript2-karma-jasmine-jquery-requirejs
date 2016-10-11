@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es3",
     "module": "amd",
+    "moduleResolution": "node",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
@@ -10,8 +11,5 @@
   },
   "include": [
     "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
   ]
 }
